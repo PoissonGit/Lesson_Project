@@ -32,7 +32,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 llm = ChatOpenAI(
     model_name="deepseek-chat",
     temperature=0,
-    openai_api_key="sk-7386338a6e5b41c7ba359c998f4a5fbc",
+    openai_api_key="DS_KEY",  //在此处键入DeepSeek密钥
     openai_api_base="https://api.deepseek.com/v1"
 )
 embedding_model = HuggingFaceBgeEmbeddings(
